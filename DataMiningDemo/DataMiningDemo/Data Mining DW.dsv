@@ -1,0 +1,86 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="288ee452-06e5-43b2-9d42-ff2793a22f5e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Data Mining DW</ID>
+  <Name>Data Mining DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Data Mining DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Data_x0020_Mining_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Data_x0020_Mining_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="1efdd4f8-1980-4490-b346-d29535de5436">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DiabetesDataset" msprop:design-time-name="0004ae6f-ee0c-4e7e-92ab-61cf3c262305" msprop:DbTableName="DiabetesDataset" msprop:FriendlyName="DiabetesDataset" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:design-time-name="cb39c7c0-f797-4dd4-9b2e-f3e71f996095" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="gender" msprop:design-time-name="38603e7b-017e-49d6-b13d-fde01b1ee756" msprop:DbColumnName="gender" msprop:FriendlyName="gender" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="age" msprop:design-time-name="5001811c-1250-455e-93cd-50c756521547" msprop:DbColumnName="age" msprop:FriendlyName="age" type="xs:double" minOccurs="0" />
+                  <xs:element name="hypertension" msprop:design-time-name="6aed602d-042d-487c-b5f7-2051eff2d030" msprop:DbColumnName="hypertension" msprop:FriendlyName="hypertension" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="heart_disease" msprop:design-time-name="b777e29a-b1c6-49cb-9456-5958ecf67e88" msprop:DbColumnName="heart_disease" msprop:FriendlyName="heart_disease" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="smoking_history" msprop:design-time-name="5bf81cd8-3555-4191-bb58-897a0b2947d1" msprop:DbColumnName="smoking_history" msprop:FriendlyName="smoking_history" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="bmi" msprop:design-time-name="e71ca6aa-93ac-4bb4-9203-21933d5fb18e" msprop:DbColumnName="bmi" msprop:FriendlyName="bmi" type="xs:double" minOccurs="0" />
+                  <xs:element name="HbA1c_level" msprop:design-time-name="ea474a38-0e5d-4b9b-9e68-70d0cf3a52d5" msprop:DbColumnName="HbA1c_level" msprop:FriendlyName="HbA1c_level" type="xs:double" minOccurs="0" />
+                  <xs:element name="blood_glucose_level" msprop:design-time-name="50dc99ff-a9de-4805-b0b7-5dd82172028f" msprop:DbColumnName="blood_glucose_level" msprop:FriendlyName="blood_glucose_level" type="xs:int" minOccurs="0" />
+                  <xs:element name="diabetes" msprop:design-time-name="0dab1ba2-8d6e-4f6f-9859-f578783cd52d" msprop:DbColumnName="diabetes" msprop:FriendlyName="diabetes" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DiabetesDataset" />
+          <xs:field xpath="id" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <Data_x0020_Mining_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

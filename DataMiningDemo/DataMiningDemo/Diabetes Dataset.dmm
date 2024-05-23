@@ -1,0 +1,434 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0b09c90e-fb36-45f4-a5fa-9ab463abcbcd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Diabetes Dataset</ID>
+  <Name>Diabetes Dataset</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_DiabetesDataset</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-14921" scrolltop="-6341" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="33532" y="17039" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DiabetesDataset" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3651" height="4357" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000430e000005110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DiabetesDataset" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-14921</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6341</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8f0001e6-e7ba-41c0-9c41-c084d83e01f5">
+    <DataSourceViewID>Data Mining DW</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d42045d9-4a10-4da3-a27f-6ee4b51d0c78">
+      <ID>Age</ID>
+      <Name>Age</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f22c90f1-ee5b-4263-b40e-0e74bf5f9d20">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b39f037f-abcb-4a3a-938e-aad9384e14f5">
+            <TableID>dbo_DiabetesDataset</TableID>
+            <ColumnID>age</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9f39b1ac-9a9f-4921-89cb-dedea8f4682b">
+      <ID>Blood Glucose Level</ID>
+      <Name>Blood Glucose Level</Name>
+      <Type>Long</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ae6cdd52-6bbc-4a5e-9dc6-77a4ae8a8518">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="437f6520-e049-4f53-809d-560ff8309cf8">
+            <TableID>dbo_DiabetesDataset</TableID>
+            <ColumnID>blood_glucose_level</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7ec778d8-8d60-40b8-8869-a7ef49529178">
+      <ID>Bmi</ID>
+      <Name>Bmi</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="719cdd5b-128c-4ae7-a9ed-134e2bd7c0d6">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e808fa3b-22e9-4680-a8f6-d4171c69cde3">
+            <TableID>dbo_DiabetesDataset</TableID>
+            <ColumnID>bmi</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="69389106-6b16-4070-ad89-582fe1b26a8d">
+      <ID>Diabetes</ID>
+      <Name>Diabetes</Name>
+      <Type>Boolean</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="477cb332-3a33-4814-9c7f-fd6b80676d78">
+          <DataType>Boolean</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7975f076-ca1b-4b42-83ec-ae5cff8b0f5b">
+            <TableID>dbo_DiabetesDataset</TableID>
+            <ColumnID>diabetes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d57399c6-6f49-4e8e-8a19-def31e01531f">
+      <ID>Gender</ID>
+      <Name>Gender</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5d4b08e8-b4f8-4f20-b39c-696c024e8abb">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1dd70fc-9fcd-4576-983e-7de2254f7981">
+            <TableID>dbo_DiabetesDataset</TableID>
+            <ColumnID>gender</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="180fc97b-e9ae-45a4-9576-34874f6a147c">
+      <ID>Hb A1c Level</ID>
+      <Name>Hb A1c Level</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="87ddefd7-1a74-412a-a98f-30a75937ec8e">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="39767ace-892b-4355-8e43-411b08b027e1">
+            <TableID>dbo_DiabetesDataset</TableID>
+            <ColumnID>HbA1c_level</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a84456f5-a890-47f1-b073-2e036bd7e3b8">
+      <ID>Heart Disease</ID>
+      <Name>Heart Disease</Name>
+      <Type>Boolean</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d39d0c15-13d1-4572-90e5-ca7a31b57810">
+          <DataType>Boolean</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e4a23331-32d6-4192-92ec-7de31d6e752a">
+            <TableID>dbo_DiabetesDataset</TableID>
+            <ColumnID>heart_disease</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9a17762a-a9ae-4466-9bb1-e22eff98e9bd">
+      <ID>Hypertension</ID>
+      <Name>Hypertension</Name>
+      <Type>Boolean</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b172d107-32cb-4ab0-98f1-40439a3ec281">
+          <DataType>Boolean</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1408cab9-9d58-4e1e-aadc-83612ed6db6f">
+            <TableID>dbo_DiabetesDataset</TableID>
+            <ColumnID>hypertension</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="479f1b4e-1f8a-4ecb-b5bb-68024accd812">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="de514ad8-287a-4814-8f3e-c920f8518b9e">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af6226d7-d4b6-4fb0-b638-e3d67386ecb5">
+            <TableID>dbo_DiabetesDataset</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fe6b00b8-0f1e-4a80-a3b6-c9b45aaa175a">
+      <ID>Smoking History</ID>
+      <Name>Smoking History</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="15ce3dcc-9723-4c08-b5bd-60b19ca33c47">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dd861653-fcaa-4c9d-848b-5ad94ff70e4f">
+            <TableID>dbo_DiabetesDataset</TableID>
+            <ColumnID>smoking_history</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="6870e041-950b-4cca-9905-128c0e16bd46">
+      <ID>NaiveBayes</ID>
+      <Name>NaiveBayes</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Naive_Bayes</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="5c34fc52-9842-4429-afde-b52feb38a2db">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="35165271-86ac-45b1-b764-f11524d24f71">
+          <ID>Blood Glucose Level</ID>
+          <Name>Blood Glucose Level</Name>
+          <SourceColumnID>Blood Glucose Level</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8d57affa-da01-41cc-bf87-c39188482caf">
+          <ID>Bmi</ID>
+          <Name>Bmi</Name>
+          <SourceColumnID>Bmi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="cee4ccb3-3004-43aa-9cdd-4f0c719c2dae">
+          <ID>Diabetes</ID>
+          <Name>Diabetes</Name>
+          <SourceColumnID>Diabetes</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="28f1283e-7f7f-4954-9278-17faa703f982">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ad732261-398a-44d8-8aea-59c042242a5c">
+          <ID>Hb A1c Level</ID>
+          <Name>Hb A1c Level</Name>
+          <SourceColumnID>Hb A1c Level</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ee0ab3cf-b512-4608-95ca-6e96bd9f45aa">
+          <ID>Heart Disease</ID>
+          <Name>Heart Disease</Name>
+          <SourceColumnID>Heart Disease</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3d9c4be0-225d-4d75-9d1e-b9c37e9e029d">
+          <ID>Hypertension</ID>
+          <Name>Hypertension</Name>
+          <SourceColumnID>Hypertension</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="95ad3b5f-8dc3-41b2-8a19-2d0555e944cc">
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <SourceColumnID>Id</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="81d60d50-b8c2-46dd-b0d0-bfb93d0f53fa">
+          <ID>Smoking History</ID>
+          <Name>Smoking History</Name>
+          <SourceColumnID>Smoking History</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="f83fe1ee-2a72-4656-9263-759a7dfb2d81">
+      <ID>Cluster</ID>
+      <Name>Cluster</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="ae23d447-fe87-4d2f-b02c-de068709b8b7">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="00cb7856-548f-415f-a97d-2d4961b78a89">
+          <ID>Blood Glucose Level</ID>
+          <Name>Blood Glucose Level</Name>
+          <SourceColumnID>Blood Glucose Level</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d0709cc2-c657-4c36-a75e-f53d08714eb1">
+          <ID>Bmi</ID>
+          <Name>Bmi</Name>
+          <SourceColumnID>Bmi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="701c483b-d88a-489d-9f14-fc56ee66ee54">
+          <ID>Diabetes</ID>
+          <Name>Diabetes</Name>
+          <SourceColumnID>Diabetes</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="85cfaad8-cf87-46ba-97ab-3a7d80f86b07">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="87c6410d-923b-482d-bab7-1866fd0a8a0a">
+          <ID>Hb A1c Level</ID>
+          <Name>Hb A1c Level</Name>
+          <SourceColumnID>Hb A1c Level</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2438f92f-fff7-469b-8f5d-32d541f04980">
+          <ID>Heart Disease</ID>
+          <Name>Heart Disease</Name>
+          <SourceColumnID>Heart Disease</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2404a12b-0a69-4719-8e67-33641899fb22">
+          <ID>Hypertension</ID>
+          <Name>Hypertension</Name>
+          <SourceColumnID>Hypertension</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="82560da2-a14e-463c-86dd-be93b3dca1c3">
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <SourceColumnID>Id</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="dc4b6e50-1eef-4447-9ee0-a92375a92599">
+          <ID>Smoking History</ID>
+          <Name>Smoking History</Name>
+          <SourceColumnID>Smoking History</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="76559424-9968-4080-9e1f-4c48e03e6e6a">
+      <ID>DecissionTreee</ID>
+      <Name>DecissionTreee</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="1d5699b0-9300-48ab-b7fb-cf6036567715">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2df3a524-2b68-4684-9b97-c0085440a265">
+          <ID>Blood Glucose Level</ID>
+          <Name>Blood Glucose Level</Name>
+          <SourceColumnID>Blood Glucose Level</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="68eb5684-f361-4838-afad-fff9f7c4f7c7">
+          <ID>Bmi</ID>
+          <Name>Bmi</Name>
+          <SourceColumnID>Bmi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7df53030-be50-4334-9651-4eb736b31fd0">
+          <ID>Diabetes</ID>
+          <Name>Diabetes</Name>
+          <SourceColumnID>Diabetes</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="d49d030f-94e2-49d6-8a81-92e4c1ae2f1c">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b818fb77-1784-48bc-862f-342b27353980">
+          <ID>Hb A1c Level</ID>
+          <Name>Hb A1c Level</Name>
+          <SourceColumnID>Hb A1c Level</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ba83ddfc-4b45-4c7e-8c9e-f02b95a350c4">
+          <ID>Heart Disease</ID>
+          <Name>Heart Disease</Name>
+          <SourceColumnID>Heart Disease</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="70c63d57-8417-4689-be27-fc820462c593">
+          <ID>Hypertension</ID>
+          <Name>Hypertension</Name>
+          <SourceColumnID>Hypertension</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="fce82211-4289-4a2d-8103-4448428f2c82">
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <SourceColumnID>Id</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="0573649b-7889-414c-bed9-7e0742ed39c4">
+          <ID>Smoking History</ID>
+          <Name>Smoking History</Name>
+          <SourceColumnID>Smoking History</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+  <ddl100_100:HoldoutMaxCases>1000</ddl100_100:HoldoutMaxCases>
+</MiningStructure>

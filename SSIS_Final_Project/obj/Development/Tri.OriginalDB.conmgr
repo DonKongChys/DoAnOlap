@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Tri.OriginalDB"
+  DTS:DTSID="{4D85E710-894C-4CBA-BA09-FBBE0BC3EC9C}"
+  DTS:CreationName="ADO">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=Tri;Initial Catalog=OriginalDB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-SSIS_Final_Project-{4D85E710-894C-4CBA-BA09-FBBE0BC3EC9C}Tri.OriginalDB;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>Select [Measures].[Sales] on Columns
+,Nonempty( Order(
+	[Dim Markets].[Market].[Market].Members
+	, [Measures].[Sales]
+	, ASC
+)) on Rows
+From [DataCoGlobal]
+Where [Dim Dates].[Order Year].&amp;[2017]</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="ID_Dim_Markets___Market___Market___MEMBER_CAPTION_">
+        <DataField>[Dim Markets].[Market].[Market].[MEMBER_CAPTION]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ID_Measures___Sales__VALUE">
+        <DataField>[Measures].[Sales].VALUE</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+      <Field Name="ID_Measures___Sales__FORMATTED_VALUE">
+        <DataField>[Measures].[Sales].FORMATTED_VALUE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet2">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>Select [Measures].[Product Quantity] on Columns
+, Head(
+	Order(
+		[Dim Products].[Product Name].[Product Name].Members
+		, [Measures].[Product Quantity]
+		, desc
+        ), 5
+) on Rows
+From [DataCoGlobal]
+Where [Dim Markets].[Market].&amp;[Africa]</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="ID_Dim_Products___Product_Name___Product_Name___MEMBER_CAPTION_">
+        <DataField>[Dim Products].[Product Name].[Product Name].[MEMBER_CAPTION]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ID_Measures___Product_Quantity__VALUE">
+        <DataField>[Measures].[Product Quantity].VALUE</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+      <Field Name="ID_Measures___Product_Quantity__FORMATTED_VALUE">
+        <DataField>[Measures].[Product Quantity].FORMATTED_VALUE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
