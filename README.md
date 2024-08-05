@@ -7,6 +7,12 @@ của họ và đưa ra các quyết định chiến lược thông minh. Từ �
 hội cạnh tranh và đáp ứng nhanh chóng với thay đổi trong thị trường, tăng doanh số bán
 hàng, cải thiện lợi nhuận, phát hiện và loại bỏ các vấn đề trong quy trình kinh doanh.
 
+# About Project
+- Thực hiện quy trình SSIS
+- Thực hiện quy trình SSAS
+- Viết truy vấn cho 15 câu truy vấn về các chủ đề khai thác từ bộ dữ liệu
+- Thực hiện xây dựng báo cáo bằng Power BI và Report Builder
+
 # Data source
 - Tập dữ liệu về Chuỗi cung ứng được công ty DataCo Global sử dụng cho phân
 tích.
