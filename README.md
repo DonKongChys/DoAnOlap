@@ -1,4 +1,4 @@
-Đồ án môn Kho Dữ Liệu Olap
+# Đồ án môn Kho Dữ Liệu Olap
 # Introdcution
 Phân tích doanh số trong lĩnh vực này cung cấp cái nhìn tổng quan về hiệu suất kinh
 doanh, các mô hình bán hàng, xu hướng của khách hàng và các cơ hội để tối ưu hóa
@@ -16,7 +16,7 @@ tin về khách hàng (người bán), đơn đặt hàng, vận chuyển và s�
 gồm dữ liệu từ các hoạt động kinh doanh như bán hàng, xử lý đơn đặt hàng và
 phân phối gói đơn hàng.
 - Dataset có 180.000 dòng khảo sát và 53 thuộc tính. (tính đến tháng 3 năm 2024).
-- Nguồn:https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain
+- Nguồn: https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain
 
 # Link các tài liệu báo cáo liên quan
 https://drive.google.com/drive/folders/1c8I7jIfusH-_O7kbPgE_ZlIC4pKX-SVC
